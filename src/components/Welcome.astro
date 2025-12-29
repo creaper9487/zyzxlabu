@@ -1,22 +1,16 @@
 ---
 // import Globe1 from "./globe.vue";
 import Globe from "./Globe";
+import Page1 from "./Welcome/page1.astro";
 ---
 
 <div class="">
-	<p class="text-5xl text-white">Owo</p>
-	<Globe client:load className="-z-10" />
-	<div class="min-h-screen">
-	a
-	</div>
-	<div class="min-h-screen">
-	b
-	</div>
-	<div class="min-h-screen">
-	c
-	</div>
-	<div class="min-h-screen">
-	d
-	</div>
-	<!-- <Globe1 client:load className="-z-10" /> -->
+  <Globe client:load className="-z-10" />
+  <div class="min-h-screen"></div>
+  <div class="min-h-screen items-center justify-center flex">
+    <Page1 />
+  </div>
+  <div class="min-h-screen">c</div>
+  <div class="min-h-screen">d</div>
+  <!-- <Globe1 client:load className="-z-10" /> -->
 </div>
